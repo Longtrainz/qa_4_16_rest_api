@@ -46,10 +46,10 @@ public class LoginTests extends TestBase {
 						.extract().cookies();
 
 		// verify successful authorization
-//		open("http://demowebshop.tricentis.com/Themes/DefaultClean/Content/images/logo.png");
-//		getWebDriver().manage().addCookie(new Cookie("Nop.customer", cookiesMap.get("Nop.customer")));
-//		getWebDriver().manage().addCookie(new Cookie("NOPCOMMERCE.AUTH", cookiesMap.get("NOPCOMMERCE.AUTH")));
-//		getWebDriver().manage().addCookie(new Cookie("ARRAffinity", cookiesMap.get("ARRAffinity")));
+		open("http://demowebshop.tricentis.com/Themes/DefaultClean/Content/images/logo.png");
+		getWebDriver().manage().addCookie(new Cookie("Nop.customer", cookiesMap.get("Nop.customer")));
+		getWebDriver().manage().addCookie(new Cookie("NOPCOMMERCE.AUTH", cookiesMap.get("NOPCOMMERCE.AUTH")));
+		getWebDriver().manage().addCookie(new Cookie("ARRAffinity", cookiesMap.get("ARRAffinity")));
 
 		open("");
 		$(".account").shouldHave(text("qaguru@qa.guru"));
